@@ -1,7 +1,6 @@
 package com.countries.app
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +9,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.RecyclerView
-import com.countries.CountriesQuery
 import com.countries.app.adapter.CountriesAdapter
 import com.countries.app.presentation.CountriesViewModel
 import dagger.hilt.android.AndroidEntryPoint

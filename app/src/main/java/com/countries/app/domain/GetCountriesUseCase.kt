@@ -6,10 +6,9 @@ class GetCountriesUseCase(
     private val countryClient: CountryClient
 ) {
 
-    suspend fun execute(text : String = "") : List<CountriesQuery.Country> {
+    suspend fun execute(): List<CountriesQuery.Country> {
         return countryClient.getCountries()
             .sortedBy { it.name }
-            .filter { it.name.contains(text, true) }
     }
 
 }
